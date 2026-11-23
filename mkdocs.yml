@@ -1,0 +1,86 @@
+site_name: 卡尔瓦世界设定 Wiki
+site_description: 卡尔瓦（Carva）原创西幻世界设定总览
+site_author: World Bible Project
+
+theme:
+  name: material
+  language: zh
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: teal
+      accent: amber
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: teal
+      accent: amber
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - toc.integrate
+    - content.code.annotate
+    - content.tabs.link
+  icon:
+    repo: fontawesome/brands/github
+
+repo_url: https://github.com/your-username/carva-wiki
+edit_uri: ""
+
+docs_dir: docs
+
+nav:
+  - 首页: README.md
+  - 必读:
+    - 设定总览: SUMMARY-设定总览.md
+    - 创作实录: LOG-创作实录.md
+    - 变更日志: CHANGELOG.md
+    - 新会话必读: HANDOFF-新会话必读.md
+    - 写作断点: PROGRESS-2026-11-19-断点.md
+    - 法术表审计: AUDIT-2026-11-19-法术表审计.md
+  - 世界设定:
+    - 00 世界观概览: 00-世界观概览.md
+    - 01 设计原则: 01-设计原则.md
+    - 02 创世与宇宙观: 02-创世与宇宙观.md
+    - 03 历史与纪元: 03-历史与纪元.md
+    - 04 地理与世界形态: 04-地理与世界形态.md
+    - 05 种族: 05-种族.md
+    - 06 宗教与神系: 06-宗教与神系.md
+    - 07 魔法体系: 07-魔法体系.md
+    - 08 政治与阵营: 08-政治与阵营.md
+    - 09 经济与贸易: 09-经济与贸易.md
+    - 10 语言与命名: 10-语言与命名.md
+    - 11 西部联盟: 11-西部联盟.md
+    - 12 职业与信仰: 12-职业与信仰.md
+  - 地图:
+    - 卡尔瓦全图: 地图-卡尔瓦.png
+  - 附录:
+    - 99 待定问题: 99-待定问题.md
+    - 职业体系归属: 职业体系归属.md
+    - 窥命者法术表草案: 窥命者法术表草案.md
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+
+plugins:
+  - search
