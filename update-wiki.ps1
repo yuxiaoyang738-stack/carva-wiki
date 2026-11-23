@@ -21,6 +21,7 @@ $env:PATH += ";C:\Program Files\Git\bin;C:\Program Files\Git\usr\bin"
 
 # 不复制以下内部协作文件（仅用于编辑，不发布到网页）：
 $exclude = @(
+    "01-设计原则.md",
     "LOG-创作实录.md",
     "CHANGELOG.md",
     "HANDOFF-新会话必读.md",
