@@ -28,7 +28,7 @@ theme:
   icon:
     repo: fontawesome/brands/github
 
-repo_url: https://github.com/your-username/carva-wiki
+repo_url: https://github.com/yuxiaoyang738-stack/carva-wiki
 edit_uri: ""
 
 docs_dir: docs
@@ -37,11 +37,6 @@ nav:
   - 首页: README.md
   - 必读:
     - 设定总览: SUMMARY-设定总览.md
-    - 创作实录: LOG-创作实录.md
-    - 变更日志: CHANGELOG.md
-    - 新会话必读: HANDOFF-新会话必读.md
-    - 写作断点: PROGRESS-2026-11-19-断点.md
-    - 法术表审计: AUDIT-2026-11-19-法术表审计.md
   - 世界设定:
     - 00 世界观概览: 00-世界观概览.md
     - 01 设计原则: 01-设计原则.md
