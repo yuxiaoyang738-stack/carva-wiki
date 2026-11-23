@@ -1531,28 +1531,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#_29" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        六、待定（本章未决）
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_30" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        七、写作纪律（本章）
-      
-    </span>
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -1817,10 +1795,6 @@
 
 
 <h1 id="12">12 · 职业与信仰<a class="headerlink" href="#12" title="Permanent link">&para;</a></h1>
-<blockquote>
-<p><strong>状态</strong>：🟩 已完成（职业骨架已定，法术表 <strong>填至第 12 个职业／共 12</strong>：圣武士、圣言者、死灵法师、祭祀、潜渊者、风暴战士、风语者、诞火者（Firekindler）、裁决官（Judgment Officer）、大司命（Druid Lord）、无畏者（Stormborn）、窥命者（Diviner）已完成 0–9 环；<strong>2026-11-23</strong>修复窥命者法术表 8 项缺陷并把审计脚本扩到全 12 职业（同名 0／逐字重复 0／结构性问题 0／法术总数 476），见 §六 注；<strong>全部 12 个联盟职业法术表已写入并通过全库校验</strong>）　|　<strong>最后更新</strong>：2026-11-23　|　<strong>依赖</strong>：<a href="../06-%E5%AE%97%E6%95%99%E4%B8%8E%E7%A5%9E%E7%B3%BB/">06 宗教与神系</a>、<a href="../07-%E9%AD%94%E6%B3%95%E4%BD%93%E7%B3%BB/">07 魔法体系</a>、<a href="../09-%E7%BB%8F%E6%B5%8E%E4%B8%8E%E8%B4%B8%E6%98%93/">09 经济与贸易</a></p>
-<p><strong>本章使命</strong>：定义玩家可扮演的战斗职业，及其与信仰、魔法体系、封建财政的绑定关系。<strong>本章只写“玩家可操作的战斗/施法职业”，不写“商人”“药剂师”“船长”等社会职能——后者属于 NPC 与 NPC 组织的范畴，详见 <a href="../06-%E5%AE%97%E6%95%99%E4%B8%8E%E7%A5%9E%E7%B3%BB/">06 宗教</a>、<a href="../08-%E6%94%BF%E6%B2%BB%E4%B8%8E%E9%98%B5%E8%90%A5/">08 政治</a>、<a href="../09-%E7%BB%8F%E6%B5%8E%E4%B8%8E%E8%B4%B8%E6%98%93/">09 经济</a>。</strong></p>
-</blockquote>
 <hr />
 <h2 id="_1">一、核心原则<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
 <h3 id="1">1. 职业与信仰绑定<a class="headerlink" href="#1" title="Permanent link">&para;</a></h3>
@@ -7548,70 +7522,6 @@
 </tbody>
 </table>
 <hr />
-<h2 id="_29">六、待定（本章未决）<a class="headerlink" href="#_29" title="Permanent link">&para;</a></h2>
-<table>
-<thead>
-<tr>
-<th>#</th>
-<th>问题</th>
-<th>优先级</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1</td>
-<td>各职业具体等级上限、技能树分支</td>
-<td>P1</td>
-</tr>
-<tr>
-<td>2</td>
-<td>各职业初始装备与起始技能</td>
-<td>P1</td>
-</tr>
-<tr>
-<td>3</td>
-<td>职业之间的克制关系（如审判官对亡灵的加成）</td>
-<td>P1</td>
-</tr>
-<tr>
-<td>4</td>
-<td>各职业在联盟各城邦的具体分布（如卡尔哈芬是否多风语者）</td>
-<td>P2</td>
-</tr>
-<tr>
-<td>5</td>
-<td>职业晋升路线（如圣武士→圣殿骑士）</td>
-<td>P2</td>
-</tr>
-</tbody>
-</table>
-<blockquote>
-<p><strong>已结项（2026-11-20）</strong>：原第 2 条「各职业高环法术的具体效果与施法代价」<strong>已随 12 职业法术表全部落盘而消解</strong>——全部 12 个联盟职业的 0–9 环法术表（含 7/8/9 环的生命力上限消耗与因果债）均已写入并通过全库校验，不再登记。</p>
-<p><strong>已结项（2026-11-19，用户逐条拍板）</strong>：原第 7 条「法术表全面审计」的 15 项问题（P0 4／P1 7／P2 4）<strong>全部修完</strong>——4 个职业重写、<strong>54 条法术改名</strong>；逐字相同 11 组→<strong>0</strong>、跨职业同名 14 组→<strong>0</strong>、消耗越标 1→<strong>0</strong>、196 条法术名全部唯一。结果与理由见 <a href="AUDIT-2026-11-19-法术表审计.md">AUDIT-2026-11-19</a> 与 <a href="CHANGELOG.md">CHANGELOG</a>。<strong>本表不再登记它。</strong></p>
-<p><strong>已修结项（2026-11-23）</strong>：窥命者法术表此前存在 8 项缺陷，此前因 <code>audit_classes.py</code> 未覆盖该职业、且环标题写成 <code>0env</code> 占位符而<strong>从未被校验检出</strong>——①环标题全是 <code>0env/1env/…</code> 占位符；②缺 3 环；③8 环表头混入韩文「생명력」；④5 组法术重名（命运洞察／命运预判／命运交错／永恒屏障／命运共鸣 各出现两次）；⑤9 环标题误写「消耗1点生命力上限」（基准 6 点）；⑥消耗数值偏离基准；⑦「升环施法规则」未用加粗格式；⑧缺「为什么点…」属性说明。<strong>全部已修复</strong>：改名拆开重名、消耗按基准对齐、补齐 3 环、标题与表头规范化、补窥命者专属条款（因果债＝环数作为被动上限、<strong>只能转移不能消耗</strong>、不能凭空给敌人施加因果债、战斗结束后清空）。同时 <code>audit_classes.py</code> 的 <code>CLASSES</code> 扩为 <strong>12 个职业</strong>并补四组主题禁用词，<code>validate_spell_table.py --all</code> → 12 职业全部通过，<code>audit_classes.py</code> → 同名 0／逐字重复 0／结构性问题 0／法术总数 476。备份：<code>archive/12-职业与信仰.bak-20261123-1300.md</code>。</p>
-<p>详细清单见 <a href="CHANGELOG.md">CHANGELOG</a> 的 2026-11-23「窥命者法术表修复」条。</p>
-<p><strong>已修结项（2026-11-19，用户授权）</strong>：原登记在 7、8 两条里的 4 处缺陷，加上本轮新发现的 2 处，全部修完——</p>
-<ul>
-<li><strong>圣武士</strong>：7 环「复活术」、8 环「死而复生」、<strong>9 环「死而复生」（本轮新发现的第三处）</strong> 三条复活法术全部移除，按用户拍板"圣武士不该具备复活能力"（复活是最高阶圣光魔法，只属于更专精的圣言者），分别替换为「圣裁标记」「殉道之誓」「圣誓·不灭」——<strong>用"不让队友死"替代"让队友复活"</strong>。</li>
-<li><strong>圣言者</strong>：7 环「死而复生」→「回魂之唤」（1 分钟内／50%）、8 环「复活术」→「复生圣言」（1 小时内／75%＋清负面），与 9 环「圣言·终焉」（1 周内／全满）构成三级阶梯，既消掉重复，也消掉同名。</li>
-<li><strong>死灵法师</strong>：3 环「死亡之握·强化」（与 2 环逐字重复）→「亡者之步」；3 环「冰霜之握」（寒冷伤害不合暗影／亡灵定位）→「骸骨之嚎」；另修好其 9 环标题缺失的右括号。</li>
-<li><strong>两处纯错字</strong>（2026-11-19 二次核对）：圣武士 8 环「圣光化身」"所有<strong>远程</strong>攻击"改为"所有<strong>近战</strong>攻击"（用户确认是笔误）；死灵法师 1 环「生命抽取」"2d6<strong>暗光</strong>伤害"改为"2d6<strong>暗影</strong>伤害"。</li>
-</ul>
-<p>详细理由与备选方案见 <a href="CHANGELOG.md">CHANGELOG</a> 的 2026-11-19 条目。</p>
-<p><strong>关于潜渊者的陆地战力（2026-11-19 拍板，已从待定表移除）</strong>：<strong>不补偿</strong>。水面／水下才是潜渊者的主场，陆地弱是刻意的职业特化，不是缺陷——保留"水域强于陆地"，不另加陆地补偿机制。</p>
-<p><strong>已经从本表移除</strong>：潜渊者 0–9 环法术表已于 2026-11-19 写完（见 §三·2）。<strong>全部 12 个联盟职业的法术表已于 2026-11-20 全部落盘，本章无待写职业。</strong></p>
-</blockquote>
-<hr />
-<h2 id="_30">七、写作纪律（本章）<a class="headerlink" href="#_30" title="Permanent link">&para;</a></h2>
-<ol>
-<li><strong>职业不是社会阶层</strong>：不要把“商人”“骑士”“主教”写成玩家可选职业，那些是 NPC 身份。</li>
-<li><strong>魔法必须有代价</strong>：所有职业的施法都受 <a href="../07-%E9%AD%94%E6%B3%95%E4%BD%93%E7%B3%BB/">07 魔法体系</a> 中的“生命力燃烧 + 因果债”规则约束，圣光系除外（由信仰值替代，教会代偿因果债）。</li>
-<li><strong>帝国境内非圣光即异端</strong>：在帝国境内玩执炬者、死灵法师等非圣光职业，会被圣裁庭追杀，这是设定的一部分，不要为了“平衡”而削弱。</li>
-<li><strong>仪式魔法留白</strong>：仪式的具体材料、时间、地点、失败后果留待后续细化，不要现在就拍板具体数字。</li>
-<li><strong>命名禁止「同名＋后缀」</strong>（·众／·增强版／·大／·远／·真）：同一法术线的不同档位必须各有独立名字；带点的「圣言·X」「风命·X」属风格前缀，允许。</li>
-<li><strong>一系两职业先写「概念归属表」再写表</strong>（见 §一·4）：战场级布置与群体增益归远程施法者；自中场域、冲锋、近战附魔、自我化身归近战职业。验收＝同环八条并排比对，<strong>自动化检测抓不到「换皮」</strong>。</li>
-<li><strong>写完必跑校验</strong>：<code>validate_spell_table.py &lt;职业名&gt;</code>（结构）＋ <code>audit_classes.py</code>（跨职业）＋ <code>validate_docs.py</code>（链接）。</li>
-</ol>
 
 
 
