@@ -30,7 +30,8 @@ $exclude = @(
 )
 
 # 部署时保留的根目录文件（不会被清理）
-$keepRoot = @("docs", "mkdocs.yml", ".nojekyll", "update-wiki.ps1")
+# 注意：site/ 目录在构建后才存在，这里先加入保留列表，避免清理时误删未部署的构建结果
+$keepRoot = @("docs", "mkdocs.yml", ".nojekyll", "update-wiki.ps1", "site")
 
 Write-Host "========================================" -ForegroundColor Cyan
 Write-Host "  卡尔瓦世界设定 Wiki · 每日更新脚本" -ForegroundColor Cyan
@@ -53,7 +54,7 @@ Write-Host "  网页已生成。" -ForegroundColor Green
 
 # ---------- 步骤 3：把构建结果部署到仓库根目录 ----------
 Write-Host "`n[步骤 3] 部署文件到仓库根目录 ..." -ForegroundColor Yellow
-# 先清理根目录旧的生成文件（保留 docs/、mkdocs.yml、.nojekyll、update-wiki.ps1、隐藏的 .git）
+# 先清理根目录旧的生成文件（保留 docs/、mkdocs.yml、.nojekyll、update-wiki.ps1、site/、隐藏的 .git）
 Get-ChildItem -Path $wikiDir | Where-Object { $keepRoot -notcontains $_.Name -and $_.Name -ne ".git" } | ForEach-Object {
     Remove-Item $_.FullName -Recurse -Force
 }
